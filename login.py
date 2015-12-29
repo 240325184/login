@@ -5,7 +5,7 @@ import json
 #info_list={'aaa':{'passwd':'123456','status':'locked'},'bbb':{'passwd':'123456','status':'unlocked'}}
 #持久化用户信息文件
 def checkout(info_list):
-    with open('info.json','r+') as f:
+    with open('info.json','w+') as f:
         json.dump(info_list,f)
 #checkout(info_list)
 
